@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* Smooth scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: theme(colors.zinc.700) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: theme(colors.zinc.700);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: theme(colors.zinc.600);
+}
